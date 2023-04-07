@@ -61,7 +61,7 @@ const Converter = ({title, description}) => {
             </div>
           </div>
           <p className="text-xs	p-1.5 text-btn-border md:mb-6 mb-5">{t('converter_term_description')}
-            <Link className="text-heading-clr" href="/terms-condition"> {t('converter_term_title')}</Link>.
+            <Link className="text-heading-clr hover:font-semibold" href="/terms-condition"> {t('converter_term_title')}</Link>.
           </p>
         </div>
       </div>
