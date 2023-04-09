@@ -1,7 +1,6 @@
 const {i18n} = require('./next-i18next.config')
 
 const nextConfig = {
-  output: 'export',
   i18n,
   reactStrictMode: true,
   swcMinify: true,
@@ -45,8 +44,6 @@ const nextConfig = {
       {source: '/th/contact/', destination: '/contact/', locale: false, permanent: true},
       {source: '/tr/contact/', destination: '/contact/', locale: false, permanent: true},
       {source: '/vi/contact/', destination: '/contact/', locale: false, permanent: true},
-      {source: '/zh-cn/contact/', destination: '/contact/', locale: false, permanent: true},
-      {source: '/zh-tw/contact/', destination: '/contact/', locale: false, permanent: true},
       {source: '/ar/contact/', destination: '/contact/', locale: false, permanent: true},
       {source: '/bn/contact/', destination: '/contact/', locale: false, permanent: true},
       {source: '/de/terms-condition/', destination: '/terms-condition/', locale: false, permanent: true},
@@ -65,8 +62,6 @@ const nextConfig = {
       {source: '/th/terms-condition/', destination: '/terms-condition/', locale: false, permanent: true},
       {source: '/tr/terms-condition/', destination: '/terms-condition/', locale: false, permanent: true},
       {source: '/vi/terms-condition/', destination: '/terms-condition/', locale: false, permanent: true},
-      {source: '/zh-cn/terms-condition/', destination: '/terms-condition/', locale: false, permanent: true},
-      {source: '/zh-tw/terms-condition/', destination: '/terms-condition/', locale: false, permanent: true},
       {source: '/ar/terms-condition/', destination: '/terms-condition/', locale: false, permanent: true},
       {source: '/bn/terms-condition/', destination: '/terms-condition/', locale: false, permanent: true},
       {source: '/de/privacy-policy/', destination: '/privacy-policy/', locale: false, permanent: true},
@@ -85,8 +80,6 @@ const nextConfig = {
       {source: '/th/privacy-policy/', destination: '/privacy-policy/', locale: false, permanent: true},
       {source: '/tr/privacy-policy/', destination: '/privacy-policy/', locale: false, permanent: true},
       {source: '/vi/privacy-policy/', destination: '/privacy-policy/', locale: false, permanent: true},
-      {source: '/zh-cn/privacy-policy/', destination: '/privacy-policy/', locale: false, permanent: true},
-      {source: '/zh-tw/privacy-policy/', destination: '/privacy-policy/', locale: false, permanent: true},
       {source: '/ar/privacy-policy/', destination: '/privacy-policy/', locale: false, permanent: true},
       {source: '/bn/privacy-policy/', destination: '/privacy-policy/', locale: false, permanent: true}
     ]

@@ -50,8 +50,6 @@ export const languageName = {
   tr: "Türkçe",
   vi: "Tiếng Việt",
   ph: "Filipino",
-  "zh-cn": "简体中文",
-  "zh-tw": "繁體中文",
   ar: "العربية",
   bn: "বাঙালি",
 };
