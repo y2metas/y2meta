@@ -5,6 +5,7 @@ import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import Layout from "@/components/layout";
 import Converter from "@/components/converter";
 import SectionMP3 from "@/components/sectionMP3";
+import Gtag from "@/components/gtag";
 
 const MP3 = () => {
   const {t} = useTranslation()
@@ -13,6 +14,7 @@ const MP3 = () => {
 
   return (
     <Layout>
+      <Gtag/>
       <Head>
         <meta charSet="utf-8"/>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1"/>

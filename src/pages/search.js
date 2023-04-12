@@ -8,6 +8,7 @@ import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import Layout from "@/components/layout";
 import SectionDownloader from "@/components/sectionDownloader";
 import Spinner from "../../public/loading.gif";
+import Gtag from "@/components/gtag";
 
 const Search = () => {
   const [dataList, setDataList] = useState();
@@ -31,6 +32,7 @@ const Search = () => {
   return (
     <>
       <Layout>
+        <Gtag/>
         <Head>
           <meta name="robots" content="noindex, nofollow"/>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1"/>

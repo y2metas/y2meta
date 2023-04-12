@@ -5,6 +5,7 @@ import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import Layout from "@/components/layout";
 import Converter from "@/components/converter";
 import SectionMP4 from "@/components/sectionMP4";
+import Gtag from "@/components/gtag";
 
 const MP4 = () => {
   const {t} = useTranslation()
@@ -12,6 +13,7 @@ const MP4 = () => {
   const canonicalUrl = router.locale !== "en" ? `https://y2meta.mobi/${router.locale}${router.asPath}` : `https://y2meta.mobi${router.asPath}`
   return (
     <Layout>
+      <Gtag/>
       <Head>
         <meta charSet="utf-8"/>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1"/>

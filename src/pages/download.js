@@ -4,6 +4,7 @@ import {useRouter} from "next/router";
 import {useTranslation} from "next-i18next";
 import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import Layout from "@/components/layout";
+import Gtag from "@/components/gtag";
 
 const Download = () => {
   const {t} = useTranslation()
@@ -13,6 +14,7 @@ const Download = () => {
   return (
     <>
       <Layout>
+        <Gtag/>
         <Head>
           <meta name="robots" content="noindex, nofollow"/>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1"/>

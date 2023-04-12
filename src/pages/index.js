@@ -5,6 +5,7 @@ import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import Layout from "@/components/layout";
 import Converter from "@/components/converter";
 import SectionDownloader from "@/components/sectionDownloader";
+import Gtag from "@/components/gtag";
 
 const YoutubeDownloader = () => {
   const {t} = useTranslation()
@@ -121,6 +122,7 @@ const YoutubeDownloader = () => {
 
   return (
     <Layout>
+      <Gtag/>
       <Head>
         <meta charSet="utf-8"/>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -154,6 +156,7 @@ const YoutubeDownloader = () => {
             <link rel="alternate" hrefLang={item} href="https://y2meta.mobi/" key={item}/>
         ))}
         <meta name="google-site-verification" content="swrenMhBfGT4U_8LhQyCoYnJL4SyJ2x9XW0F0eYdxK8"/>
+        <meta name="monetag" content="b1af40c7cfd9807995efe13df5d7ff64">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={webSiteJsonLd()}
