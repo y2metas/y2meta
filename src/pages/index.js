@@ -10,7 +10,7 @@ import Gtag from "@/components/gtag";
 const YoutubeDownloader = () => {
   const {t} = useTranslation()
   const router = useRouter();
-  const canonicalUrl = router.locale !== "en" ? `https://y2meta.mobi/${router.locale}${router.asPath}` : `https://y2meta.mobi${router.asPath}`
+  const canonicalUrl = router.locale !== "en" ? `https://y2meta.mobi/${router.locale}${router.asPath}` : `https://y2meta.mobi${router.asPath}`;
 
   const webSiteJsonLd = () => {
     return {
@@ -173,6 +173,7 @@ const YoutubeDownloader = () => {
           key="faqPage-jsonld"
         />
       </Head>
+      <script src="https://upskittyan.com/pfe/current/tag.min.js?z=5870970" data-cfasync="false" async />
       <Converter
         title={t('converter_title')}
         description={t('converter_description')}
