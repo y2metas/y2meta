@@ -156,7 +156,7 @@ const YoutubeDownloader = () => {
             <link rel="alternate" hrefLang={item} href="https://y2meta.mobi/" key={item}/>
         ))}
         <meta name="google-site-verification" content="swrenMhBfGT4U_8LhQyCoYnJL4SyJ2x9XW0F0eYdxK8"/>
-        <meta name="monetag" content="b1af40c7cfd9807995efe13df5d7ff64">
+        <meta name="monetag" content="b1af40c7cfd9807995efe13df5d7ff64"/>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={webSiteJsonLd()}
