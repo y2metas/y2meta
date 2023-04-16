@@ -12,6 +12,8 @@ const YoutubeDownloader = () => {
   const router = useRouter();
   const canonicalUrl = router.locale !== "en" ? `https://y2meta.mobi/${router.locale}${router.asPath}` : `https://y2meta.mobi${router.asPath}`;
 
+  console.log(router)
+
   const webSiteJsonLd = () => {
     return {
       __html: `{
@@ -157,23 +159,26 @@ const YoutubeDownloader = () => {
         ))}
         <meta name="google-site-verification" content="swrenMhBfGT4U_8LhQyCoYnJL4SyJ2x9XW0F0eYdxK8"/>
         <meta name="monetag" content="b1af40c7cfd9807995efe13df5d7ff64"/>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={webSiteJsonLd()}
-          key="website-jsonld"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={softwareApplicationJsonLd()}
-          key="softwareApplication-jsonld"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={faqPageJsonLd()}
-          key="faqPage-jsonld"
-        />
+        {router.locale === 'en' &&
+          <>
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={webSiteJsonLd()}
+              key="website-jsonld"
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={softwareApplicationJsonLd()}
+              key="softwareApplication-jsonld"
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={faqPageJsonLd()}
+              key="faqPage-jsonld"
+            />
+          </>
+        }
       </Head>
-      <script src="https://upskittyan.com/pfe/current/tag.min.js?z=5870970" data-cfasync="false" async />
       <Converter
         title={t('converter_title')}
         description={t('converter_description')}
